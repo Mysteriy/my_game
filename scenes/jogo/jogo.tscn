@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbs6fwk67ieox"]
+
+[ext_resource type="PackedScene" uid="uid://b53xxo7ifpj0" path="res://scenes/player/player.tscn" id="1_qyxwn"]
+[ext_resource type="Texture2D" uid="uid://rf5q72dfp7eb" path="res://assets/piso.png" id="2_vtbf4"]
+[ext_resource type="PackedScene" uid="uid://d2xk0po76guyu" path="res://scenes/inimigos/esqueleto.tscn" id="3_vtbf4"]
+
+[node name="Jogo" type="Node2D"]
+
+[node name="chão" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_vtbf4")
+
+[node name="Player" parent="." instance=ExtResource("1_qyxwn")]
+position = Vector2(938, 515)
+
+[node name="esqueleto" parent="." instance=ExtResource("3_vtbf4")]
+position = Vector2(1160, 508)

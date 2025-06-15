@@ -1,0 +1,89 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsgk0ngps2vjg"]
+
+[ext_resource type="SystemFont" uid="uid://q60ldw082ley" path="res://fonts/fonte_butao_grande.tres" id="1_e0arn"]
+[ext_resource type="Script" uid="uid://iufqpr31gaw6" path="res://scenes/menu/button_jogar.gd" id="2_037ec"]
+[ext_resource type="Script" uid="uid://cosvaw0j53830" path="res://scenes/menu/button_sair.gd" id="3_y1o0p"]
+
+[sub_resource type="SystemFont" id="SystemFont_j7vem"]
+font_names = PackedStringArray("Jokerman")
+subpixel_positioning = 0
+multichannel_signed_distance_field = true
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 284.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.235524, 0.405618, 0.867877, 1)
+theme_override_colors/font_shadow_color = Color(0.189917, 0.811108, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_j7vem")
+theme_override_font_sizes/font_size = 100
+text = "Roguelite: Test game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="button_jogar" type="Button" parent="."]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -190.0
+offset_right = 125.0
+offset_bottom = -82.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_e0arn")
+theme_override_font_sizes/font_size = 80
+text = "Jogar"
+script = ExtResource("2_037ec")
+
+[node name="button_config" type="Button" parent="."]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -241.0
+offset_top = -40.0
+offset_right = 241.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_e0arn")
+theme_override_font_sizes/font_size = 80
+text = "Configurações"
+
+[node name="button_sair" type="Button" parent="."]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = 110.0
+offset_right = 125.0
+offset_bottom = 218.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_e0arn")
+theme_override_font_sizes/font_size = 80
+text = "Sair"
+script = ExtResource("3_y1o0p")

@@ -1,0 +1,4 @@
+[gd_resource type="SystemFont" format=3 uid="uid://q60ldw082ley"]
+
+[resource]
+font_names = PackedStringArray("Arial Rounded MT")

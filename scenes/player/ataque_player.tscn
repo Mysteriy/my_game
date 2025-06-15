@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1nu8onq35o48"]
+
+[sub_resource type="CurveTexture" id="CurveTexture_l261b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2glw3"]
+size = Vector2(38, 9.5)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.738281, 0.222061, 0.222061, 1)
+self_modulate = Color(0.752941, 0.305882, 0.180392, 1)
+z_index = 8
+texture_filter = 1
+scale = Vector2(0.15, 10)
+texture = SubResource("CurveTexture_l261b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.25)
+shape = SubResource("RectangleShape2D_2glw3")
